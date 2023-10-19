@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box1 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: pink;
+        float: left;
+        margin: 10px;
+        cursor: auto;
+    }
+    #box2 {
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        border: 2px solid black;
+        background-color: blueviolet;
+        float: left;
+        margin: 10px;
+        cursor: default;
+    }
+    #box3 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: pink;
+        float: left;
+        margin: 10px;
+        cursor: none;
+    }
+    #box4 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: blueviolet;
+        float: left;
+        margin: 10px;
+        cursor: context-menu;
+    }
+    #box5 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: pink;
+        float: left;
+        margin: 10px;
+        cursor: help;
+    }
+    #box6 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: blueviolet;
+        float: left;
+        margin: 10px;
+        cursor: pointer;
+    }
+    #box7 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: pink;
+        float: left;
+        margin: 10px;
+        cursor: progress;
+    }
+    #box8 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: blueviolet;
+        float: left;
+        margin: 10px;
+        cursor: wait;
+    }
+    #box9 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: pink;
+        float: left;
+        margin: 10px;
+        cursor: cell;
+    }
+    #box10 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: blueviolet;
+        float: left;
+        margin: 10px;
+        cursor: crosshair;
+    }
+    #box11 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: pink;
+        float: left;
+        margin: 10px;
+        cursor: text;
+    }
+    #box12 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: blueviolet;
+        float: left;
+        margin: 10px;
+        cursor: vertical-text;
+    }
+    #box13 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: pink;
+        float: left;
+        margin: 10px;
+        cursor: alias;
+    }
+    #box14 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: blueviolet;
+        float: left;
+        margin: 10px;
+        cursor: copy;
+    }
+    #box15 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: pink;
+        float: left;
+        margin: 10px;
+        cursor: move;
+    }
+    #box16 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: blueviolet;
+        float: left;
+        margin: 10px;
+        cursor: no-drop;
+    }
+    #box17 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: pink;
+        float: left;
+        margin: 10px;
+        cursor: not-allowed;
+    }
+    #box18 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: blueviolet;
+        float: left;
+        margin: 10px;
+        cursor: e-resize;
+    }
+    #box19 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: pink;
+        float: left;
+        margin: 10px;
+        cursor: n-resize;
+    }
+    #box20 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: blueviolet;
+        float: left;
+        margin: 10px;
+        cursor: ne-resize;
+    }
+    #box21 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: pink;
+        float: left;
+        margin: 10px;
+        cursor: nw-resize;
+    }
+    #box22 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: blueviolet;
+        float: left;
+        margin: 10px;
+        cursor: s-resize;
+    }
+    #box23 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: pink;
+        float: left;
+        margin: 10px;
+        cursor: se-resize;
+    }
+    #box24 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: blueviolet;
+        float: left;
+        margin: 10px;
+        cursor: sw-resize;
+    }
+    #box25 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: pink;
+        float: left;
+        margin: 10px;
+        cursor: w-resize;
+    }
+    #box26 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: blueviolet;
+        float: left;
+        margin: 10px;
+        cursor: ew-resize;
+    }
+    #box27 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: pink;
+        float: left;
+        margin: 10px;
+        cursor: ns-resize;
+    }
+    #box28 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: blueviolet;
+        float: left;
+        margin: 10px;
+        cursor: nesw-resize;
+    }
+    #box29 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: pink;
+        float: left;
+        margin: 10px;
+        cursor: nwse-resize;
+    }
+    #box30 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: blueviolet;
+        float: left;
+        margin: 10px;
+        cursor: col-resize;
+    }
+    #box31 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: pink;
+        float: left;
+        margin: 10px;
+        cursor: row-resize;
+    }
+    #box32 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: blueviolet;
+        float: left;
+        margin: 10px;
+        cursor: all-scroll;
+    }
+    #box33 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: pink;
+        float: left;
+        margin: 10px;
+        cursor: zoom-in;
+    }
+    #box34 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: blueviolet;
+        float: left;
+        margin: 10px;
+        cursor: zoom-out;
+    }
+    #box35 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: pink;
+        float: left;
+        margin: 10px;
+        cursor: grab;
+    }
+    #box36 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: blueviolet;
+        float: left;
+        margin: 10px;
+        cursor: grabbing;
+    }
+</style>
+<body>
+    <div class="First">
+      <div id="box1">
+        <p>Cursor Auto</p>
+      </div>
+      <div id="box2">
+        <p>Cursor default</p>
+      </div>
+      <div id="box3">
+        <p>Cursor none</p>
+      </div>
+      <div id="box4">
+        <p>Cursor context-menu</p>
+      </div>
+      <div id="box5">
+        <p>Cursor help</p>
+      </div>
+      <div id="box6">
+        <p>Cursor pointer</p>
+      </div>
+      <div id="box7">
+        <p>Cursor progress</p>
+      </div>
+      <div id="box8">
+        <p>Cursor wait</p>
+      </div>
+      <div id="box9">
+        <p>Cursor cell</p>
+      </div>
+      <div id="box10">
+        <p>Cursor crosshair</p>
+      </div>
+      <div id="box11">
+        <p>Cursor text</p>
+      </div>
+      <div id="box12">
+        <p>Cursor vertical-text</p>
+      </div>
+      <div id="box13">
+        <p>Cursor alias</p>
+      </div>
+      <div id="box14">
+        <p>Cursor copy</p>
+      </div>
+      <div id="box15">
+        <p>Cursor move</p>
+      </div>
+      <div id="box16">
+        <p>Cursor no-drop</p>
+      </div>
+      <div id="box17">
+        <p>Cursor not-allowed</p>
+      </div>
+      <div id="box18">
+        <p>Cursor e-resize</p>
+      </div>
+      <div id="box19">
+        <p>Cursor n-resize</p>
+      </div>
+      <div id="box20">
+        <p>Cursor ne-resize</p>
+      </div>
+      <div id="box21">
+        <p>Cursor nw-resize</p>
+      </div>
+      <div id="box22">
+        <p>Cursor s-resize</p>
+      </div>
+      <div id="box23">
+        <p>Cursor se-resize</p>
+      </div>
+      <div id="box24">
+        <p>Cursor sw-resize</p>
+      </div>
+      <div id="box25">
+        <p>Cursor w-resize</p>
+      </div>
+      <div id="box26">
+        <p>Cursor ew-resize</p>
+      </div>
+      <div id="box27">
+        <p>Cursor ns-resize</p>
+      </div>
+      <div id="box28">
+        <p>Cursor nesw-resize</p>
+      </div>
+      <div id="box29">
+        <p>Cursor nwse-resize</p>
+      </div>
+      <div id="box30">
+        <p>Cursor col-resize</p>
+      </div>
+      <div id="box31">
+        <p>Cursor row-resize</p>
+      </div>
+      <div id="box32">
+        <p>Cursor all-scroll</p>
+      </div>
+      <div id="box33">
+        <p>Cursor zoom-in</p>
+      </div>
+      <div id="box34">
+        <p>Cursor zoom-out</p>
+      </div>
+      <div id="box35">
+        <p>Cursor grab</p>
+      </div>
+      <div id="box36">
+        <p>Cursor grabbing</p>
+      </div>
+    </div>
+</body>
+</html>
