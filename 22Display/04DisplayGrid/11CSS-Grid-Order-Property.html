@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container {
+            background: lightgray;
+            width: 650px;
+            margin: 50px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(150px,150px 150px);
+            grid-template-rows: repeat(2,150px);
+
+            grid-auto-rows: 80px;
+        }
+
+        .item1 {
+            background: olive;
+            order: 1;
+        }
+
+        .item2 {
+            background: aqua;
+        }
+
+        .item3 {
+            background: saddlebrown;
+        }
+
+        .item4 {
+            background: khaki;
+        }
+
+        .item5 {
+            background: blueviolet;
+        }
+
+        .item6 {
+            background: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">one</div>
+        <div class="items item2">two</div>
+        <div class="items item3">three</div>
+        <div class="items item4">four</div>
+        <div class="items item5">five</div>
+        <div class="items item6">six</div>
+</body>
+</html>

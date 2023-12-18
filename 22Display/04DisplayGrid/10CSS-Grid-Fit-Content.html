@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background: lightgray;
+            width: 80%;
+            margin: 50px auto 0;
+
+            display: grid;
+            grid-template-columns: fit-content(200px) fit-content(300px) 1fr;
+            grid-template-rows: repeat(2, minmax(100px, min-content));
+
+            grid-auto-rows: 80px;
+        }
+
+        .item1 {
+            background: olive;
+        }
+
+        .item2 {
+            background: aqua;
+        }
+
+        .item3 {
+            background: saddlebrown;
+        }
+
+        .item4 {
+            background: khaki;
+        }
+
+        .item5 {
+            background: blueviolet;
+        }
+
+        .item6 {
+            background: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items item1">one Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea voluptates debitis
+            repudiandae adipisci eius dolores totam vitae delectus fugit quis, a ducimus quos ullam fugiat provident
+            facilis nostrum odio ex perferendis vero hic deserunt. Asperiores laudantium, harum iste omnis aliquid
+            impedit sit ipsam. Aliquid perspiciatis quod, corporis labore soluta ipsum.</div>
+        <div class="items item2">two Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum in nulla
+            fugiat omnis sint iusto non dolor dignissimos delectus quo laudantium officiis ducimus nemo doloremque
+            quisquam odio, qui consectetur earum reprehenderit a dolorum eveniet! Ipsa delectus perspiciatis,
+            dignissimos voluptate corrupti neque consequuntur magni et hic eaque accusamus, ex quibusdam a reiciendis,
+            temporibus consectetur labore dicta voluptatibus! Incidunt animi autem necessitatibus a dicta! Totam
+            deleniti incidunt, iure voluptatibus corporis, perspiciatis ipsum voluptatum exercitationem, dolores dolore
+            commodi nobis itaque ex? Rerum, dolorum!</div>
+        <div class="items item3">three</div>
+        <div class="items item4">four</div>
+        <div class="items item5">five</div>
+        <div class="items item6">six</div>
+    </div>
+</body>
+
+</html>

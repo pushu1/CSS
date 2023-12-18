@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            background-color: orangered;
+            padding: 3px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar ul {
+            overflow: auto;
+        }
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+        .navbar a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+        .search {
+            padding: 3px 7px;
+             /* display: flex;
+             align-items: center;
+             justify-content: space-between; */
+             /* justify-content: flex-end; */
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+         <ul>
+            <li><a href="#">Logo</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Servies</a></li>
+        </ul>
+            <div class="search">
+               <input type="text" name="Search" id="Search" placeholder="Search This WebSide">
+               <input type="button" name="Go" value="Go">
+            </div>
+         
+        </nav>
+    </header>
+</body>
+</html>

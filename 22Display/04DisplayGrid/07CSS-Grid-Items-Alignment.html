@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background: #eee;
+            width: 700px;
+            margin: 45px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 120px);
+            grid-gap: 15px;
+            grid-auto-rows: 70px;
+
+            /* align-items: center; */
+            /* align-items: start; */
+            /* align-items: end; */
+            /* align-items: stretch; */
+
+            /* justify-items: start; */
+            /* justify-items: end; */
+            /* justify-items: center; */
+            /* justify-items: stretch; */
+
+            place-items: center start;
+            
+        }
+        .item1 {background: indianred;
+        /* align-self: end; */
+        
+    }
+        .item2 {background: darkblue;
+            justify-self: end;
+        place-self: center end;}
+        .item3 {background: firebrick;
+        grid-row: span 3;}
+        .item4 {background: chartreuse;}
+        .item5 {background: saddlebrown;}
+        .item6 {background: violet;}
+        .item7 {background: brown;
+        grid-column: span 2;}
+        .item8 {background: navy;}
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="items item1">one</div>
+        <div class="items item2">two</div>
+        <div class="items item3">three</div>
+        <div class="items item4">four</div>
+        <div class="items item5">five</div>
+        <div class="items item6">six</div>
+        <div class="items item7">saveen</div>
+        <div class="items item8">eight</div>
+        </div>
+</body>
+</html>

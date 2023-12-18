@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background: lightgray;
+            width: 80%;
+            margin: 50px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+            grid-template-rows: repeat(2,100px);
+
+            grid-auto-rows: 80px;
+        }
+        .item1 {background: olive;}
+        .item2 {background: aqua;}
+        .item3 {background: saddlebrown;}
+        .item4 {background: khaki;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">one</div>
+        <div class="items item2">two</div>
+        <div class="items item3">three</div>
+        <div class="items item4">four</div>
+        </div>
+</body>
+</html>
